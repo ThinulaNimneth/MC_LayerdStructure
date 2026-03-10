@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="controller" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.medicalcenterlayerdstructure.controller.DashboardController">
+   <children>
+
+      <AnchorPane prefHeight="600.0" prefWidth="175.0" style="-fx-background-color: #2196F3; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 15, 0, 3, 0);">
+         <children>
+
+            <ImageView fitHeight="75.0" fitWidth="142.0" layoutX="37.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/medicarelogo.png" />
+               </image>
+            </ImageView>
+
+            <Label layoutX="18.0" layoutY="83.0" text="Medical Center" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+
+            <Label layoutX="28.0" layoutY="109.0" text="Management System" textFill="#93c5fd">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+
+
+            <Label fx:id="lblWelcome" alignment="CENTER" layoutX="10.0" layoutY="558.0" prefWidth="155.0" text="Welcome, User" textFill="#E3F2FD" wrapText="true">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+
+            <Separator layoutX="10.0" layoutY="130.0" prefWidth="155.0" style="-fx-background-color: rgba(255,255,255,0.2);" />
+
+
+            <VBox layoutX="10.0" layoutY="145.0" prefWidth="155.0" spacing="6.0">
+               <children>
+
+                  <Button fx:id="btnDashboard" alignment="CENTER_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleDashboard" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: rgba(255,255,255,0.15); -fx-background-radius: 10; -fx-text-fill: white; -fx-font-size: 12px; -fx-font-weight: bold;" text="📊 Dashboard">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <padding>
+                        <Insets left="12.0" />
+                     </padding>
+                  </Button>
+
+
+                  <Button fx:id="btnPatient" alignment="CENTER_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handlePatient" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: transparent; -fx-background-radius: 10; -fx-text-fill: #e0e7ff; -fx-font-size: 12px;" text="🏥 Patients">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <padding>
+                        <Insets left="12.0" />
+                     </padding>
+                  </Button>
+
+
+                  <Button fx:id="btnAppointment" alignment="CENTER_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleAppointment" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: transparent; -fx-background-radius: 10; -fx-text-fill: #e0e7ff; -fx-font-size: 11px;" text="📅 Appointments">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <padding>
+                        <Insets left="12.0" />
+                     </padding>
+                  </Button>
+
+
+                  <Button fx:id="btnDoctor" alignment="CENTER_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleDoctor" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: transparent; -fx-background-radius: 10; -fx-text-fill: #e0e7ff; -fx-font-size: 12px;" text="👨‍⚕️ Doctors">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <padding>
+                        <Insets left="12.0" />
+                     </padding>
+                  </Button>
+
+
+                  <Button fx:id="btnEmployee" alignment="CENTER_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleEmployee" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: transparent; -fx-background-radius: 10; -fx-text-fill: #e0e7ff; -fx-font-size: 12px;" text="👥 Employees">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <padding>
+                        <Insets left="12.0" />
+                     </padding>
+                  </Button>
+
+
+                  <Button fx:id="btnPayment" alignment="CENTER_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handlePayment" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: transparent; -fx-background-radius: 10; -fx-text-fill: #e0e7ff; -fx-font-size: 12px;" text="💳 Payments">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <padding>
+                        <Insets left="12.0" />
+                     </padding>
+                  </Button>
+
+
+                  <Button fx:id="btnMedicine" alignment="CENTER_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleMedicine" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: transparent; -fx-background-radius: 10; -fx-text-fill: #e0e7ff; -fx-font-size: 12px;" text="💊 Medicine">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <padding>
+                        <Insets left="12.0" />
+                     </padding>
+                  </Button>
+
+
+                  <Button fx:id="btnHistory" alignment="CENTER_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleHistory" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: transparent; -fx-background-radius: 10; -fx-text-fill: #e0e7ff; -fx-font-size: 12px;" text="📋 History">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <padding>
+                        <Insets left="12.0" />
+                     </padding>
+                  </Button>
+
+
+                  <Button fx:id="btnSupplier" alignment="CENTER_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleSupplier" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: transparent; -fx-background-radius: 10; -fx-text-fill: #e0e7ff; -fx-font-size: 12px;" text="🚚 Suppliers">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <padding>
+                        <Insets left="12.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+
+
+      <AnchorPane fx:id="mainContent" layoutX="175.0" prefHeight="600.0" prefWidth="825.0" style="-fx-background-color: #f8fafc;" />
+   </children>
+</AnchorPane>
